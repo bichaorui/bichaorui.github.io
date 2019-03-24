@@ -116,12 +116,13 @@
 <meta property="og:site_name" content="毕晁瑞的小菜园">
 <meta property="og:description" content="使用react的hooks和context实现redux">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/2019/03/25/2019-03-24-hooks-context实现redux/react-props.png">
 <meta property="og:image" content="http://yoursite.com/2019/03/25/2019-03-24-hooks-context实现redux/run.jpg">
-<meta property="og:updated_time" content="2019-03-24T09:59:20.174Z">
+<meta property="og:updated_time" content="2019-03-24T10:10:58.395Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【简单化】hooks+context实现redux">
 <meta name="twitter:description" content="使用react的hooks和context实现redux">
-<meta name="twitter:image" content="http://yoursite.com/2019/03/25/2019-03-24-hooks-context实现redux/run.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/25/2019-03-24-hooks-context实现redux/react-props.png">
 
 
 
@@ -406,7 +407,7 @@
                 
               
 
-              <time title="创建时间：2019-03-24 12:56:40 / 修改时间：05:59:20" itemprop="dateCreated datePublished" datetime="2019-03-24T12:56:40-04:00">2019-03-24</time>
+              <time title="创建时间：2019-03-24 12:56:40 / 修改时间：06:10:58" itemprop="dateCreated datePublished" datetime="2019-03-24T12:56:40-04:00">2019-03-24</time>
             
 
             
@@ -485,7 +486,7 @@
 <li>多层数据传递的</li>
 <li>数据的订阅操作的麻烦</li>
 </ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">  &lt;!--react 源码--&gt;</span><br><span class="line">// Resolve default props</span><br><span class="line">if (type &amp;&amp; type.defaultProps) &#123;</span><br><span class="line">  var defaultProps = type.defaultProps;</span><br><span class="line">  for (propName in defaultProps) &#123;</span><br><span class="line">    if (props[propName] === undefined) &#123;</span><br><span class="line">      props[propName] = defaultProps[propName];</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="/2019/03/25/2019-03-24-hooks-context实现redux/./react-props.png" alt="源码"><br>上图为react中关于props的赋值方式</p>
 <p>于是大家用react-redux来处理的。<br>使用高阶组件来注入action和store来达到数据传输和订阅操作。</p>
 <h2 id="延伸问题——react-redux使用的拖沓"><a href="#延伸问题——react-redux使用的拖沓" class="headerlink" title="延伸问题——react-redux使用的拖沓"></a>延伸问题——react-redux使用的拖沓</h2><p>我们知道高阶组件的注入是静态的。这就引发来一个问题，我们需要做更多。<br>这里的拖沓点：</p>
 <ul>
