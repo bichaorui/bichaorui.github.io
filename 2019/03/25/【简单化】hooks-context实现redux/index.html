@@ -108,24 +108,27 @@
 
 
 
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="使用react的hooks和context实现redux">
+<meta name="keywords" content="JavaScript,React,Hooks,Redux,context">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/11/17/hello-world/index.html">
+<meta property="og:title" content="【简单化】hooks+context实现redux">
+<meta property="og:url" content="http://yoursite.com/2019/03/25/【简单化】hooks-context实现redux/index.html">
 <meta property="og:site_name" content="毕晁瑞的小菜园">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="使用react的hooks和context实现redux">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-17T08:38:17.833Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/25/【简单化】hooks-context实现redux/2019-03-24-hooks-context实现redux.md2019-03-24-hooks-context实现redux/react-props.png">
+<meta property="og:updated_time" content="2019-03-24T07:51:39.836Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="【简单化】hooks+context实现redux">
+<meta name="twitter:description" content="使用react的hooks和context实现redux">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/25/【简单化】hooks-context实现redux/2019-03-24-hooks-context实现redux.md2019-03-24-hooks-context实现redux/react-props.png">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/11/17/hello-world/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/25/【简单化】hooks-context实现redux/">
 
 
 
@@ -135,7 +138,7 @@
   };
 </script>
 
-  <title>Hello World | 毕晁瑞的小菜园</title>
+  <title>【简单化】hooks+context实现redux | 毕晁瑞的小菜园</title>
   
 
 
@@ -361,7 +364,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/25/【简单化】hooks-context实现redux/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Chaorui Bi">
@@ -378,7 +381,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World
+          <h1 class="post-title" itemprop="name headline">【简单化】hooks+context实现redux
               
             
           </h1>
@@ -403,13 +406,49 @@
                 
               
 
-              <time title="创建时间：2018-11-17 03:38:17" itemprop="dateCreated datePublished" datetime="2018-11-17T03:38:17-05:00">2018-11-17</time>
+              <time title="创建时间：2019-03-24 12:56:40 / 修改时间：03:51:39" itemprop="dateCreated datePublished" datetime="2019-03-24T12:56:40-04:00">2019-03-24</time>
             
 
+            
+              
+
+              
             
           </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/前端技术/" itemprop="url" rel="index"><span itemprop="name">前端技术</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/前端技术/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/前端技术/JavaScript/React/" itemprop="url" rel="index"><span itemprop="name">React</span></a></span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -422,6 +461,8 @@
 
           
 
+          
+              <div class="post-description">使用react的hooks和context实现redux</div>
           
 
         </div>
@@ -437,16 +478,21 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>阅读本文章，你也许需要具备react，flux，context，hooks等知识。</p>
+<h1 id="原由"><a href="#原由" class="headerlink" title="原由"></a>原由</h1><p>前端开发，绕不开react，数据持久话等问题。</p>
+<h2 id="初始问题——react传递问题"><a href="#初始问题——react传递问题" class="headerlink" title="初始问题——react传递问题"></a>初始问题——react传递问题</h2><p>在react中，数据子孙组件，兄弟组件，多层的数据传递，都是用props的方式来处理。<br>这里有两个痛点：</p>
+<ul>
+<li>多层数据传递的</li>
+<li>数据的订阅操作的麻烦</li>
+</ul>
+<p><img src="/2019/03/25/【简单化】hooks-context实现redux/./2019-03-24-hooks-context实现redux.md2019-03-24-hooks-context实现redux/react-props.png" alt="react-props源码"></p>
+<p>于是大家用react-redux来处理的。<br>使用高阶组件来注入action和store来达到数据传输和订阅操作。</p>
+<h2 id="延伸问题——react-redux使用的拖沓"><a href="#延伸问题——react-redux使用的拖沓" class="headerlink" title="延伸问题——react-redux使用的拖沓"></a>延伸问题——react-redux使用的拖沓</h2><p>我们知道高阶组件的注入是静态的。这就引发来一个问题，我们需要做更多。<br>这里的拖沓点：</p>
+<ul>
+<li>从sotre的数据更新到同步到view层，是需要我们进行同步的（一般写在生命周期中，通过props的比较来触发setState，以期修改view）</li>
+</ul>
+<h2 id="解决办法——hooks-context"><a href="#解决办法——hooks-context" class="headerlink" title="解决办法——hooks+context"></a>解决办法——hooks+context</h2><p>在16版本中，引入来hooks和context的方法和概念。<br>利用hooks的useState即时变化特性，解决 <a href="">延伸问题——react-redux使用的拖沓</a>；<br>利用context的多层传递特性，解决<a href="">初始问题——react传递问题</a>；</p>
+<h1 id="先看代码"><a href="#先看代码" class="headerlink" title="先看代码"></a>先看代码</h1>
       
     </div>
 
@@ -467,6 +513,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/React/" rel="tag"># React</a>
+          
+            <a href="/tags/Hooks/" rel="tag"># Hooks</a>
+          
+            <a href="/tags/Redux/" rel="tag"># Redux</a>
+          
+            <a href="/tags/context/" rel="tag"># context</a>
+          
+        </div>
+      
 
       
       
@@ -476,15 +536,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/12/02/Hexo下的Markdown语法/" rel="next" title="Hexo下的Markdown语法">
+                <i class="fa fa-chevron-left"></i> Hexo下的Markdown语法
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/11/19/test/" rel="prev" title="test">
-                test <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -554,14 +614,74 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
               
 
               
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">9</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
 
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
             </nav>
           
@@ -593,7 +713,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#原由"><span class="nav-number">2.</span> <span class="nav-text">原由</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始问题——react传递问题"><span class="nav-number">2.1.</span> <span class="nav-text">初始问题——react传递问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#延伸问题——react-redux使用的拖沓"><span class="nav-number">2.2.</span> <span class="nav-text">延伸问题——react-redux使用的拖沓</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决办法——hooks-context"><span class="nav-number">2.3.</span> <span class="nav-text">解决办法——hooks+context</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#先看代码"><span class="nav-number">3.</span> <span class="nav-text">先看代码</span></a></li></ol></div>
             
 
           </div>
@@ -613,7 +733,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
